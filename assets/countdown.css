@@ -1,0 +1,80 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  background: url(Back.jpg);
+  background-size: cover;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.type{
+  background-color: rgb(64, 0, 255);
+  text-transform: uppercase;
+  font-family: verdana;
+  margin: 2%;
+  font-size: 6em;
+  /* text-align: center; */
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+.col{
+  display: flex;
+  justify-content: center;
+  color: #f5f5f5;
+  margin-top: 2%;
+  /* border: 2px solid yellow; */
+}
+@keyframes glowing {
+  0% { box-shadow: 0 0 10px 0 rgba(0, 0, 255, 0.7); }
+  50% { box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.7); }
+  100% { box-shadow: 0 0 10px 0 rgba(0, 0, 255, 0.7); }
+}
+
+.col div {
+  /* Your existing styles */
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+  background: #2d2f38;
+  border-radius: 10px;
+  position: relative; 
+  animation: glowing 2s infinite;
+
+}
+
+input{
+  font-size: 7em;
+  font-weight: 600px;
+  line-height: 125px;
+  text-align: center;
+  width: 150px;
+  margin-top: 30%;
+  background: -webkit-linear-gradient(90deg, blue, white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
